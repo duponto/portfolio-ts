@@ -4,7 +4,7 @@ import PostCard from "components/PostCard";
 import posts from "json/posts.json";
 
 export default function Competencias() {
-
+ 
     return (
         <ul className={styles.posts}>            
             {posts.map((post) => (
