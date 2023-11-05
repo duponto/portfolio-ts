@@ -7,6 +7,7 @@ import Inicio from "pages/Inicio";
 import SobreMim from "pages/SobreMim";
 import Post from "pages/Post";
 import NaoEncontrada from "pages/NaoEncontrada";
+import Competencias from "pages/Competencias";
 
 function AppRoutes() {
   return (
@@ -19,6 +20,7 @@ function AppRoutes() {
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<SobreMim />} />
           <Route path="formacao" element={<></>} />
+          <Route path="competencias" element={<Competencias/>} />
           <Route path="contato" element={<></>} />
         </Route>
         
