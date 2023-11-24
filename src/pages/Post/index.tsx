@@ -4,7 +4,6 @@ import { Route, Routes, useParams } from "react-router-dom"
 import posts from "json/posts.json";
 import PostModelo from "components/PostModelo";
 import NaoEncontrada from 'pages/NaoEncontrada';
-import PaginaPadrao from 'components/PaginaPadrao';
 import PostCard from 'components/PostCard';
 import ReactMarkdown from "react-markdown";
 
@@ -26,33 +25,31 @@ export default function Post() {
 
     return (
         <Routes>
-            <Route path="*" element={<PaginaPadrao />}>
-                <Route index element={
-                    <PostModelo
-                        fotoCapa={`/assets/posts/${post.id}/capa.png`}
-                        titulo={post.titulo}
-                    >
-                        <div className="post-markdown-container">
-                            <ReactMarkdown>
-                                {post.texto}
-                            </ReactMarkdown>
-                        </div>
+            <Route index element={
+                <PostModelo
+                    fotoCapa={`/assets/posts/${post.id}/capa.png`}
+                    titulo={post.titulo}
+                >
+                    <div className="post-markdown-container">
+                        <ReactMarkdown>
+                            {post.texto}
+                        </ReactMarkdown>
+                    </div>
 
-                    <h2 className={styles.tituloOutrosPosts}>
-                        Outros posts que você pode gostar:
-                    </h2>
+                <h2 className={styles.tituloOutrosPosts}>
+                    Outros posts que você pode gostar:
+                </h2>
 
-                    <ul className={styles.postsRecomendados}>
-                        {postsRecomendados.map((post) => (
-                            <li key={post.id}>
-                                <PostCard post={post} />
-                            </li>
-                        ))}
-                    </ul>
+                <ul className={styles.postsRecomendados}>
+                    {postsRecomendados.map((post) => (
+                        <li key={post.id}>
+                            <PostCard post={post} />
+                        </li>
+                    ))}
+                </ul>
 
-                    </PostModelo>
-                } />
-            </Route>
+                </PostModelo>
+            } />
         </Routes>
 
     )

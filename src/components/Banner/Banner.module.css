@@ -25,7 +25,7 @@
     height: 406px;
 }
  
-.imagens > .minhaFoto {
+/* .imagens > .minhaFoto {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -38,6 +38,13 @@
     right: 7vw;
     bottom: 2.2vw;
     width: 25vw;
+} */
+
+.imagens > .minhaFoto {
+    position: absolute;
+    right: 7vw;
+    width: 25vw;
+    border-radius: 50%;
 }
  
 @media (max-width: 1100px) {    
@@ -58,11 +65,15 @@
         height: 338px;
     }
    
-    .imagens > .minhaFoto {
+    /* .imagens > .minhaFoto {
         width: 25vw;
     }
    
     .imagens > .circuloColorido {
+        right: 10vw;
+        width: 35vw;
+    } */
+    .imagens > .minhaFoto {
         right: 10vw;
         width: 35vw;
     }
@@ -92,12 +103,16 @@
         margin: 0 auto;
     }
    
-    .imagens > .minhaFoto {
+    /* .imagens > .minhaFoto {
         width: 170px;
         transform: translate(5rem, 0px);
     }
    
     .imagens > .circuloColorido {
+        width: 240px;
+        transform: translate(-1.5rem, 0px);
+    } */
+    .imagens > .minhaFoto    {
         width: 240px;
         transform: translate(-1.5rem, 0px);
     }
