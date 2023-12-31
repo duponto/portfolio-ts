@@ -14,9 +14,6 @@ export default function Menu() {
                 <MenuLink to="/competencias">
                     Competências
                 </MenuLink>
-                <MenuLink to="/sobremim">
-                    Sobre Mim
-                </MenuLink>
                 <MenuLink to="/contato">
                     Contato
                 </MenuLink>

@@ -5,7 +5,7 @@ export default function Banner() {
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
                 <h1 className={styles.titulo}>
-                    Salve!
+                    Olá, mundo!
                 </h1>
 
                 <p className={styles.paragrafo}>
@@ -15,13 +15,6 @@ export default function Banner() {
             </div>
 
             <div className={styles.imagens}>
-                {/* <img
-                    className={styles.circuloColorido}
-                    src={'/images/circulo_colorido.png'}
-                    aria-hidden={true}
-                    alt=""
-                /> */}
-
                 <img
                     className={styles.minhaFoto}
                     src={'/images/eumesmo.jpg'}
