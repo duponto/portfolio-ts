@@ -1,3 +1,4 @@
+import StackIconsRow from 'components/StackIconsRow';
 import styles from './Banner.module.css';
 
 export default function Banner() {
@@ -12,8 +13,8 @@ export default function Banner() {
                     Bem vindo ao meu portfólio! Meu nome é Gabriel Dupont, sou desenvolvedor Full-Stack e este é o meu site pessoal.
                     Aqui você pode encontrar um pouco sobre mim, minhas experiências, meus projetos e entrar em contato comigo.
                 </p>
+                <StackIconsRow />
             </div>
-
             <div className={styles.imagens}>
                 <img
                     className={styles.minhaFoto}
