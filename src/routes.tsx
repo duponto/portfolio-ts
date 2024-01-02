@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "components/ScrollToTop";
 import Rodape from "components/Rodape";
-import Menu from "components/Menu";
+import Header from "components/Header";
 import Inicio from "pages/Inicio";
 import Post from "pages/Post";
 import NaoEncontrada from "pages/NaoEncontrada";
@@ -11,7 +11,7 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Menu />
+      <Header />
 
       <Routes>
         <Route path="/">

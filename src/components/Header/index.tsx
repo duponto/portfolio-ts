@@ -1,7 +1,7 @@
 import MenuLink from 'components/MenuLink';
-import styles from './Menu.module.css';
+import styles from './Header.module.css';
 
-export default function Menu() {
+export default function Header() {
     return (
         <header>
             <nav className={styles.navegacao}>
