@@ -5,10 +5,10 @@ export default function SobreMim() {
     return (
         <PostModelo
             fotoCapa={'/images/sobre_mim_capa.png'}
-            titulo="Sobre mim"
+            titulo="Sobre mim como desenvolvedor"
         >
             <h3 className={styles.subtitulo}>
-                Olá, eu sou o Gabriel!
+                Como desenvolvedor...
             </h3>
 
             <img
@@ -18,12 +18,11 @@ export default function SobreMim() {
             />
 
             <p className={styles.paragrafo}>
-                Como desenvolvedor, sempre tento deixar o código o mais limpo e legível possível, 
-                para que qualquer pessoa que o leia possa entender o que está acontecendo. 
+                sempre tento deixar o código o mais limpo e legível possível. 
                 Também gosto de aprender novas tecnologias e ferramentas, 
                 e de aplicar o que aprendi em projetos pessoais. 
                 Acredito que nem sempre se pode dizer que aprendeu algo apenas assistindo, 
-                precisa por a mão na massa e apanhar um pouquinho no aprendizado.
+                é preciso por a mão na massa e apanhar um pouquinho no aprendizado.
             </p>
         </PostModelo>
     )
