@@ -3,16 +3,19 @@ import netCoreSvg from '../../assets/icons/NET-core.svg';
 import jsSvg from '../../assets/icons/js.svg';
 import reactSvg from '../../assets/icons/react.svg';
 import tsSvg from '../../assets/icons/ts.svg';
+import jQuerySvg from '../../assets/icons/jquery.svg';
+import styles from './StackIconsRow.module.css';
 
 
 export default function StackIconsRow() {
     return (
-        <div>
-            <img src={cSharpSvg} alt="CSharp logo" title="CSharp logo" width="75px" height="75px" />
-            <img src={netCoreSvg} alt=".NET Core logo" title=".NET Core logo" width="75px" height="75px" />
-            <img src={jsSvg} alt="JavaScript logo" title="JavaScript logo" width="75px" height="75px" />
-            <img src={reactSvg} alt="React.js logo" title="React logo" width="75px" height="75px" />
-            <img src={tsSvg} alt="Typescript logo" title="Typescript logo" width="75px" height="75px" />
+        <div className={styles.container}>
+            <img src={cSharpSvg} alt="CSharp logo" title="CSharp logo" />
+            <img src={netCoreSvg} alt=".NET Core logo" title=".NET Core logo" />
+            <img src={jsSvg} alt="JavaScript logo" title="JavaScript logo" />
+            <img src={jQuerySvg} alt="jQuery logo" title="jQuery logo" />
+            <img src={reactSvg} alt="React.js logo" title="React logo" />
+            <img src={tsSvg} alt="Typescript logo" title="Typescript logo" />
         </div>
     )
 }
