@@ -2,6 +2,16 @@
     color: var(--cor-fonte-post);
     position: relative;
 }
+
+.gif {
+    width: 10rem;
+    height: 10rem;
+    margin-left: 5.5rem;
+}
+
+.gif:hover {
+    cursor: pointer;
+}   
  
 .fotoCapa, .titulo {
     height: 204px;

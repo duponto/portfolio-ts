@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 import downArrowGif from "assets/gifs/scroll-down-arrow.gif";
 
 export default function Inicio() {
+
+    const gifOnClick = () => {
+        window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+    }
+
     return (
         <main>
             <Banner />
@@ -13,6 +18,7 @@ export default function Inicio() {
                 fotoCapa={'/images/sobre_mim_capa.png'}
                 titulo="Sobre mim como desenvolvedor"
                 gifPath={downArrowGif}
+                gifOnClick={gifOnClick}
             >
                 <h3 className={styles.subtitulo}>
                     Como desenvolvedor...
