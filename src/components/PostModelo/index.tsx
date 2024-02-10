@@ -4,9 +4,10 @@ interface PostModeloProps {
     fotoCapa: string;
     titulo: string;
     children: any;
+    gifPath?: string;
 }
 
-export default function PostModelo({ children, fotoCapa, titulo } : PostModeloProps) {
+export default function PostModelo({ children, fotoCapa, titulo, gifPath="" } : PostModeloProps) {
     return (
         <article className={styles.postModeloContainer}>
             <div
@@ -15,7 +16,7 @@ export default function PostModelo({ children, fotoCapa, titulo } : PostModeloPr
             ></div>
 
             <h2 className={styles.titulo}>
-                {titulo}
+                {titulo} {gifPath? <img src={gifPath} alt="Gif seta para baixo"/> : ""}
             </h2>
 
             <div className={styles.postConteudoContainer}>

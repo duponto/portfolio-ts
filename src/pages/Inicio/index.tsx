@@ -2,6 +2,7 @@ import Banner from "components/Banner";
 import PostModelo from "components/PostModelo";
 import styles from "./Inicio.module.css";
 import { Link } from "react-router-dom";
+import downArrowGif from "assets/gifs/scroll-down-arrow.gif";
 
 export default function Inicio() {
     return (
@@ -9,8 +10,9 @@ export default function Inicio() {
             <Banner />
             
             <PostModelo
-            fotoCapa={'/images/sobre_mim_capa.png'}
-            titulo="Sobre mim como desenvolvedor"
+                fotoCapa={'/images/sobre_mim_capa.png'}
+                titulo="Sobre mim como desenvolvedor"
+                gifPath={downArrowGif}
             >
                 <h3 className={styles.subtitulo}>
                     Como desenvolvedor...
@@ -30,12 +32,40 @@ export default function Inicio() {
                         é preciso por a mão na massa e apanhar um pouquinho no aprendizado.
                     </p>
                     <p>
-                        Minha carreira começou em 2021, sendo estagiário de desenvolvimento na{" "}
+                        Minha carreira começou em 05/2021, sendo estagiário de desenvolvimento na{" "}
                         <Link to={"https://www.saur.com.br/"} target="_blank" className={styles.link}>
                             SAUR Equipamentos S/A
                         </Link>
-                        {" "}Onde tive meu primeiro contato profissional com o mundo da programação,
-                        lidando principalmente com HTML, CSS, JavaScript (e tb jQuery), e algumas outras linguagens ferramentais como o Fluig.
+                        ,{" "}onde tive meu primeiro contato profissional com o mundo da programação,
+                        lidando principalmente com HTML, CSS, JavaScript (e tb jQuery),
+                        e algumas outras linguagens ferramentais como o Fluig.
+                        Enquanto estagiário pela SAUR, fui basicamente o responsável geral da aplicação de sistema de gestão de documentos,
+                        um sistema feito em Fluig, no qual fui o principal mantenedor e desenvolvedor naquela época.
+                    </p>
+                    <p>
+                        Atualmente (desde 06/2022), estou trabalhando como desenvolvedor full-stack na{" "}
+                        <Link to={"https://ignisplanning.com/"} target="_blank" className={styles.link}>
+                            Ignis Planning
+                        </Link>
+                        , onde trabalho com diversas tecnologias, como JavaScript, React e TypeScript no front-end,
+                        e C# com .NET Framework e .NET Core no back-end.
+                        Aqui, também, aprendi a desenvolver web crawlers em C#, criando-os para extrair diversos dados públicos
+                        de fontes confiáveis, através de APIs, web scraping, e
+                        download/leitura/atualização de arquivos xlsx, pdf, csv, etc.
+                    </p>
+                    <p>
+                        No último ano (2023), a Ignis proporcionou a oportunidade de estudar através da{" "}
+                        <Link to={"https://www.alura.com.br/"} target="_blank" className={styles.link}>
+                            Alura
+                        </Link>
+                        , que se tornou minha maior fonte de estudos e aprendizados. Confira meu{" "}
+                        <Link 
+                            to={"https://cursos.alura.com.br/user/gabriel-muenchen/fullCertificate/b44c9518654137508dd40f2ad65389b4"}
+                            target="_blank"
+                            className={styles.link}
+                        >
+                            Certificado de Conclusão
+                        </Link>
                     </p>
                 </div>
             </PostModelo>
