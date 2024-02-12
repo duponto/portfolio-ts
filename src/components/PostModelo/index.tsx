@@ -1,23 +1,28 @@
 import styles from './PostModelo.module.css';
+import downArrowGif from "assets/gifs/scroll-down-arrow.gif";
 
 interface PostModeloProps {
     fotoCapa: string;
     titulo: string;
     children: any;
-    gifPath?: string;
-    gifOnClick?: () => void;
 }
 
-export default function PostModelo({ children, fotoCapa, titulo, gifPath="", gifOnClick }: PostModeloProps) {
+export default function PostModelo({ children, fotoCapa, titulo }: PostModeloProps) {
+    
+    const gifOnClick = () => {
+        window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+    }
+
     return (
         <article className={styles.postModeloContainer}>
             <div
                 className={styles.fotoCapa}
                 style={{ backgroundImage: `url(${fotoCapa})` }}
-            ></div>
+            />
 
             <h2 className={styles.titulo}>
-                {titulo} {gifPath? <img src={gifPath} onClick={gifOnClick} alt="Gif seta para baixo" className={styles.gif}/> : ""}
+                {titulo} 
+                <img src={downArrowGif} onClick={gifOnClick} alt="Gif seta para baixo" className={styles.gif}/>
             </h2>
 
             <div className={styles.postConteudoContainer}>

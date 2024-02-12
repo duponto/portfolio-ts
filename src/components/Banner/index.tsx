@@ -1,10 +1,10 @@
-import StackIconsRow from 'components/StackIconsRow';
 import styles from './Banner.module.css';
 
 export interface BannerProps {	
     titulo: string;
     paragrafo: string;
     imagem: ImageProps;
+    children?: React.ReactNode;
 }
 
 interface ImageProps {
@@ -13,7 +13,7 @@ interface ImageProps {
 }
 
 export default function Banner(props: BannerProps) {
-    const { titulo, paragrafo, imagem } = props;
+    const { titulo, paragrafo, imagem, children } = props;
     return (
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
@@ -24,7 +24,7 @@ export default function Banner(props: BannerProps) {
                 <p className={styles.paragrafo}>
                     {paragrafo}
                 </p>
-                <StackIconsRow />
+                {children}
             </div>
             <div className={styles.imagens}>
                 <img {...imagem} className={styles.imagemBanner}/>

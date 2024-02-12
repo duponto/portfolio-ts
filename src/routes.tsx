@@ -6,6 +6,7 @@ import Inicio from "pages/Inicio";
 import Post from "pages/Post";
 import NaoEncontrada from "pages/NaoEncontrada";
 import Competencias from "pages/Competencias";
+import Formacao from "pages/Formacao";
 
 function AppRoutes() {
   return (
@@ -16,7 +17,7 @@ function AppRoutes() {
       <Routes>
         <Route path="/">
           <Route index element={<Inicio />} />
-          <Route path="formacao" element={<></>} />
+          <Route path="formacao" element={<Formacao/>} />
           <Route path="competencias" element={<Competencias/>} />
           <Route path="contato" element={<></>} />
         </Route>

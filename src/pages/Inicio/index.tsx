@@ -2,27 +2,23 @@ import Banner, { BannerProps } from "components/Banner";
 import PostModelo from "components/PostModelo";
 import styles from "./Inicio.module.css";
 import { Link } from "react-router-dom";
-import downArrowGif from "assets/gifs/scroll-down-arrow.gif";
+import StackIconsRow from "components/StackIconsRow";
 
 export default function Inicio() {
 
-    const gifOnClick = () => {
-        window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
-    }
-
-
-    const bannerContent = {
+    const bannerContent : BannerProps = {
         titulo: "Olá, mundo!",
         paragrafo: "Bem vindo ao meu portfólio! Meu nome é Gabriel Dupont, sou desenvolvedor Full-Stack e este é o meu site pessoal. Aqui você pode encontrar um pouco sobre mim, minhas experiências, meus projetos e entrar em contato comigo.",
         imagem: {
             src: "/images/eumesmo.jpg",
             alt: "Foto de Gabriel Dupont olhando ao lado"
-        }
+        },
+        children: <StackIconsRow/>
     }
 
 
     return (
-        <main>
+        <>
             <Banner
                 {...bannerContent}
             />
@@ -30,8 +26,6 @@ export default function Inicio() {
             <PostModelo
                 fotoCapa={'/images/sobre_mim_capa.png'}
                 titulo="Sobre mim como desenvolvedor"
-                gifPath={downArrowGif}
-                gifOnClick={gifOnClick}
             >
                 <h3 className={styles.subtitulo}>
                     Como desenvolvedor...
@@ -58,7 +52,7 @@ export default function Inicio() {
                         ,{" "}onde tive meu primeiro contato profissional com o mundo da programação,
                         lidando principalmente com HTML, CSS, JavaScript (e jQuery),
                         e algumas outras linguagens ferramentais.
-                        Enquanto estagiário pela SAUR, fui basicamente o responsável geral da aplicação de sistema de gestão de documentos,
+                        Enquanto estagiário pela SAUR, fui basicamente o responsável geral da aplicação de sistema de gestão de documentos utilizada,
                         um sistema feito em Fluig, no qual fui o principal mantenedor e desenvolvedor naquela época.
                     </p>
                     <p>
@@ -66,7 +60,7 @@ export default function Inicio() {
                         <Link to={"https://ignisplanning.com/"} target="_blank" className={styles.link}>
                             Ignis Planning
                         </Link>
-                        , onde trabalho com diversas tecnologias, como JavaScript, React e TypeScript no front-end,
+                        , onde trabalho com diversas tecnologias, como JavaScript, jQuery, React e TypeScript no front-end,
                         e C# com .NET Framework e .NET Core no back-end.
                         Aqui, também, aprendi a desenvolver web crawlers em C#, criando-os para extrair diversos dados públicos
                         de fontes confiáveis, através de APIs, web scraping, e
@@ -88,6 +82,6 @@ export default function Inicio() {
                     </p>
                 </div>
             </PostModelo>
-        </main>
+        </>
     )
 }
