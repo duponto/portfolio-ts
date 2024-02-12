@@ -19,7 +19,7 @@ export default function NaoEncontrada() {
                 </p>
 
                 <p className={styles.paragrafo}>
-                    Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
+                    Aguarde uns instantes e recarregue a página, ou volte para a página anterior.
                 </p>
 
                 <div
