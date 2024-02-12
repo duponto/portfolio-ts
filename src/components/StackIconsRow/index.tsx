@@ -1,14 +1,12 @@
 import styles from './StackIconsRow.module.css';
-import cSharpSvg from '../../assets/icons/cs.svg';
-import netCoreSvg from '../../assets/icons/NET-core.svg';
-import jsSvg from '../../assets/icons/js.svg';
-import reactSvg from '../../assets/icons/react.svg';
-import tsSvg from '../../assets/icons/ts.svg';
-import jQuerySvg from '../../assets/icons/jquery.svg';
-import postgreSqlSvg from '../../assets/icons/postgresql.svg';
-import gitSvg from '../../assets/icons/git.svg';
-// import vscSvg from '../../assets/icons/vsc.svg';
-// import vsSvg from '../../assets/icons/visual-studio.svg';
+import cSharpSvg from 'assets/icons/cs.svg';
+import netCoreSvg from 'assets/icons/NET-core.svg';
+import jsSvg from 'assets/icons/js.svg';
+import reactSvg from 'assets/icons/react.svg';
+import tsSvg from 'assets/icons/ts.svg';
+import jQuerySvg from 'assets/icons/jquery.svg';
+import postgreSqlSvg from 'assets/icons/postgresql.svg';
+import gitSvg from 'assets/icons/git.svg';
 
 
 export default function StackIconsRow() {

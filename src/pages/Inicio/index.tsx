@@ -1,4 +1,4 @@
-import Banner from "components/Banner";
+import Banner, { BannerProps } from "components/Banner";
 import PostModelo from "components/PostModelo";
 import styles from "./Inicio.module.css";
 import { Link } from "react-router-dom";
@@ -10,9 +10,21 @@ export default function Inicio() {
         window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
     }
 
+
+    const bannerContent: BannerProps = {
+        titulo: "Olá, mundo!",
+        paragrafo: "Bem vindo ao meu portfólio! Meu nome é Gabriel Dupont, sou desenvolvedor Full-Stack e este é o meu site pessoal. Aqui você pode encontrar um pouco sobre mim, minhas experiências, meus projetos e entrar em contato comigo.",
+        imagem: {
+            src: '/images/eumesmo.jpg',
+            alt: 'Foto do Gabriel Dupont olhando para o lado'
+        }
+    }
+
+
     return (
         <main>
-            <Banner />
+            <Banner
+            />
             
             <PostModelo
                 fotoCapa={'/images/sobre_mim_capa.png'}
@@ -43,8 +55,8 @@ export default function Inicio() {
                             SAUR Equipamentos S/A
                         </Link>
                         ,{" "}onde tive meu primeiro contato profissional com o mundo da programação,
-                        lidando principalmente com HTML, CSS, JavaScript (e tb jQuery),
-                        e algumas outras linguagens ferramentais como o Fluig.
+                        lidando principalmente com HTML, CSS, JavaScript (e jQuery),
+                        e algumas outras linguagens ferramentais.
                         Enquanto estagiário pela SAUR, fui basicamente o responsável geral da aplicação de sistema de gestão de documentos,
                         um sistema feito em Fluig, no qual fui o principal mantenedor e desenvolvedor naquela época.
                     </p>

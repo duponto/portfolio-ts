@@ -1,7 +1,19 @@
 import StackIconsRow from 'components/StackIconsRow';
 import styles from './Banner.module.css';
+import internal from 'stream';
 
-export default function Banner() {
+export interface BannerProps {	
+    titulo: string;
+    paragrafo: string;
+    imagem: ImageProps;
+}
+
+interface ImageProps {
+    src: string;
+    alt: string;
+}
+
+export default function Banner(props: BannerProps) {
     return (
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
