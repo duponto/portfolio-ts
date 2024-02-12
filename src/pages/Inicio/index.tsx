@@ -11,12 +11,12 @@ export default function Inicio() {
     }
 
 
-    const bannerContent: BannerProps = {
+    const bannerContent = {
         titulo: "Olá, mundo!",
         paragrafo: "Bem vindo ao meu portfólio! Meu nome é Gabriel Dupont, sou desenvolvedor Full-Stack e este é o meu site pessoal. Aqui você pode encontrar um pouco sobre mim, minhas experiências, meus projetos e entrar em contato comigo.",
         imagem: {
-            src: '/images/eumesmo.jpg',
-            alt: 'Foto do Gabriel Dupont olhando para o lado'
+            src: "/images/eumesmo.jpg",
+            alt: "Foto de Gabriel Dupont olhando ao lado"
         }
     }
 
@@ -24,6 +24,7 @@ export default function Inicio() {
     return (
         <main>
             <Banner
+                {...bannerContent}
             />
             
             <PostModelo
