@@ -1,0 +1,28 @@
+
+.subtitulo {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.studyRoadImage {
+    margin-bottom: .5rem;
+    margin-left: 2.5rem;
+    width: 40vw;
+    height: 40vw;
+    float: right;
+}
+ 
+.paragrafos {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.link {
+    color:blue;
+    text-decoration: underline;
+}
