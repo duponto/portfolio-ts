@@ -52,26 +52,26 @@ export default function Inicio() {
                         ,{" "}onde tive meu primeiro contato profissional com o mundo da programação,
                         lidando principalmente com HTML, CSS, JavaScript (e jQuery),
                         e algumas outras linguagens ferramentais.
-                        Enquanto estagiário pela SAUR, fui basicamente o responsável geral da aplicação de sistema de gestão de documentos utilizada,
-                        um sistema feito em Fluig, no qual fui o principal mantenedor e desenvolvedor naquela época.
+                        Enquanto estagiário pela SAUR, fui o principal responsável e desenvolvedor 
+                        da aplicação do sistema de gestão de documentos utilizada, um sistema feito em Fluig.
                     </p>
                     <p>
-                        Atualmente (desde 06/2022), estou trabalhando como desenvolvedor full-stack na{" "}
+                        De 06/2022 até 06/2024 fui desenvolvedor full-stack na{" "}
                         <Link to={"https://ignisplanning.com/"} target="_blank" className={styles.link}>
                             Ignis Planning
                         </Link>
-                        , onde trabalho com diversas tecnologias, como JavaScript, jQuery, React e TypeScript no front-end,
+                        , onde trabalhei com diversas tecnologias, como JavaScript, jQuery, React e TypeScript no front-end,
                         e C# com .NET Framework e .NET Core no back-end.
                         Aqui, também, aprendi a desenvolver web crawlers em C#, criando-os para extrair diversos dados públicos
                         de fontes confiáveis, através de APIs, web scraping, e
                         download/leitura/atualização de arquivos xlsx, pdf, csv, etc.
                     </p>
                     <p>
-                        No último ano (2023), a Ignis proporcionou a oportunidade de estudar através da{" "}
+                        Em 2023, a Ignis proporcionou a oportunidade de estudar através da{" "}
                         <Link to={"https://www.alura.com.br/"} target="_blank" className={styles.link}>
                             Alura
                         </Link>
-                        , que se tornou minha maior fonte de estudos e aprendizados. Confira meu{" "}
+                        , que se tornou, na época, minha maior fonte de estudos e aprendizados. Confira meu{" "}
                         <Link 
                             to={"https://cursos.alura.com.br/user/gabriel-muenchen/fullCertificate/b44c9518654137508dd40f2ad65389b4"}
                             target="_blank"
@@ -79,6 +79,13 @@ export default function Inicio() {
                         >
                             Certificado de Conclusão
                         </Link>
+                    </p>
+                    <p>
+                        A partir de Junho de 2024, a Ignis integrou-se ao sistema da {" "}
+                        <Link to={"https://www.alvarezandmarsal.com/"} target="_blank" className={styles.link}>
+                            Alvarez & Marsal
+                        </Link>
+                        , onde fui contratado como Software Developer, e continuo trabalhando com as mesmas tecnologias.
                     </p>
                 </div>
             </PostModelo>

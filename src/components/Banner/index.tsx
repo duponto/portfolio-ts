@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import styles from './Banner.module.css';
 
 export interface BannerProps {	
@@ -12,8 +13,7 @@ interface ImageProps {
     alt: string;
 }
 
-export default function Banner(props: BannerProps) {
-    const { titulo, paragrafo, imagem, children } = props;
+export default function Banner({ titulo, paragrafo, imagem, children }: BannerProps) {
     return (
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
