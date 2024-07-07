@@ -29,6 +29,7 @@
  
 .titulo {
     font-family: var(--fonte-secundaria);
+    color: black;
     padding: 0 7.5rem;
     font-size: 4rem;
     display: flex;
